@@ -1,0 +1,109 @@
+$nutino: 'Nunito',
+sans-serif;
+
+$rubik: 'Rubik',
+sans-serif;
+
+$anton: 'Anton',
+sans-serif;
+
+
+@mixin my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+body {
+    font-family: $nutino;
+}
+
+.refer-friend {
+    p {
+        float: right;
+        font-family: $nutino;
+        font-size: 13px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        padding-right: 20px;
+
+    }
+}
+
+.refer-friend {
+    background-color: lightgrey;
+    opacity: 0.7;
+}
+
+ul {
+    .navbar-right {
+        float: right;
+        font-size: 13px;
+    }
+}
+
+.navbar {
+    .navbar-brand {
+        img {
+            height: 50px;
+        }
+    }
+}
+
+.navbar-nav {
+    li {
+        padding: 0px 10px 0px 40px;
+    }
+}
+
+
+
+.no-border {
+    border: none;
+    background: none;
+    padding: 0px 20px 0px 20px;
+}
+
+.buttons {
+    border: 3px solid yellow;
+
+    .vl {
+        border-left: 3px solid yellow;
+        height: 500px;
+        padding: 4px 0px 4px 0px;
+    }
+
+}
+
+.hero-img {
+    height: 300px;
+}
+
+.auto {
+    padding-top: 90px;
+    @include my-auto();
+}
+
+.search {
+    h2 {
+        font-family: $nutino !important;
+        margin-top: 70px;
+        padding-top: 20px;
+        color: rgb(255, 255, 255);
+    }
+
+    background-color: rgba(51, 49, 49, 0.4);
+
+}
+
+@media (max-width: 767px) {
+    .navbar-toggle {
+        border: none;
+        outline: none;
+    }
+
+    .hero-img {
+        height: 200px;
+        margin-left: 40px;
+        margin-right: auto;
+    }
+}
