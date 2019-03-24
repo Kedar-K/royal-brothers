@@ -1,3 +1,9 @@
+.main {
+  background-image: url("./images/city-road-background-wallpaper-3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 body {
   font-family: "Nunito", sans-serif;
 }
@@ -22,7 +28,7 @@ ul .navbar-right {
 }
 
 .navbar .navbar-brand img {
-  height: 50px;
+  height: 40px;
 }
 
 .navbar-nav li {
@@ -33,6 +39,7 @@ ul .navbar-right {
   border: none;
   background: none;
   padding: 0px 20px 0px 20px;
+  color: #FFFFFA;
 }
 
 .buttons {
@@ -56,14 +63,197 @@ ul .navbar-right {
 }
 
 .search {
-  background-color: rgba(51, 49, 49, 0.4);
+  background-color: rgba(19, 19, 18, 0.4);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
 }
 
 .search h2 {
   font-family: "Nunito", sans-serif !important;
   margin-top: 70px;
   padding-top: 20px;
+  padding-bottom: 20px;
   color: white;
+}
+
+.search .search-btn {
+  background: none;
+  border: 3px solid #2C2D38;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  margin: 20px;
+}
+
+[type="date"] {
+  background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+  font-family: "Nunito", sans-serif;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+/* custom styles */
+label {
+  display: inline-block;
+}
+
+input {
+  border: none;
+  background-color: #fff;
+  padding: 10px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  width: 150px;
+}
+
+.date {
+  padding: 30px 15px 15px 15px;
+  color: white;
+}
+
+form select {
+  background-color: white;
+  border: none;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.row .statement {
+  padding-top: 50px;
+  color: #fff;
+}
+
+.row .more {
+  border: none;
+  color: #fad013;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: underline;
+  padding-bottom: 43px;
+}
+
+.counter {
+  background: #c5c3c3;
+  text-align: center;
+}
+
+.counter .count-item {
+  border: 3px solid #fafa34;
+  margin: 50px 10px 50px 10px;
+  border-radius: 5px;
+  background: #fff;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.counter .count-item .count {
+  font-family: "Anton", sans-serif;
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.counter .count-item .count-desc {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.three {
+  background: white;
+  margin: 0px;
+}
+
+.container .head {
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+}
+
+.container .mainbox {
+  margin: 20px 0px 20px;
+}
+
+.container .box {
+  background: #2C2D38;
+  color: whitesmoke;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.container .box .content {
+  padding: 20px;
+}
+
+.container .box .content h4 {
+  font-weight: bold;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  font-size: 7em;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.container .box .content h5 {
+  padding-top: 80px;
+  margin: 0px 0px 20px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.container .box .content p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.container .box:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.container .box:hover .content h4 {
+  top: -5px;
+  right: 7px;
+}
+
+.four {
+  background: lightgray;
+}
+
+.four .container .row {
+  background: white;
+  text-align: center;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.four .container .row .more1 {
+  background: white;
+}
+
+.four .container .row .more1 h6 {
+  padding-top: 100px;
+}
+
+.four .container .row .col-md-3 {
+  border-bottom: 4px solid #2C2D38;
+}
+
+.four .container .row h6 {
+  font-weight: 800;
+  padding-top: 20px;
+}
+
+.four .container .row img {
+  height: 150px;
 }
 
 @media (max-width: 767px) {
@@ -73,8 +263,23 @@ ul .navbar-right {
   }
   .hero-img {
     height: 200px;
-    margin-left: 40px;
+    margin-left: 44px;
     margin-right: auto;
+  }
+  ul .navbar-right {
+    float: none;
+    font-size: 13px;
+  }
+  .main {
+    background-image: none;
+  }
+  .row .statement {
+    padding-top: 50px;
+    color: black;
+    text-align: justify;
+  }
+  .buttons {
+    width: 200px;
   }
 }
 /*# sourceMappingURL=main.css.map */
