@@ -79,7 +79,7 @@ ul .navbar-right {
 
 .search .search-btn {
   background: none;
-  border: 3px solid #2C2D38;
+  border: 3px solid yellow;
   color: white;
   padding: 10px 20px 10px 20px;
   margin: 20px;
@@ -256,6 +256,36 @@ form select {
   height: 150px;
 }
 
+.five {
+  background: lightgray !important;
+  text-align: center;
+}
+
+.five img {
+  height: 200px;
+}
+
+footer {
+  background: #2C2D38;
+  padding: 60px;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  text-align: justify;
+  padding-left: 70px;
+}
+
+footer img {
+  height: 80px;
+}
+
+footer .copy {
+  text-align: center;
+  padding-top: 30px;
+}
+
 @media (max-width: 767px) {
   .navbar-toggle {
     border: none;
@@ -280,6 +310,15 @@ form select {
   }
   .buttons {
     width: 200px;
+  }
+  footer img {
+    margin-bottom: 30px;
+    height: 50px;
+  }
+  footer p {
+    margin-top: 20px;
+    padding: 0px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
