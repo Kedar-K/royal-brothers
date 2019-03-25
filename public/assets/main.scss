@@ -1,0 +1,397 @@
+$nutino: 'Nunito',
+sans-serif;
+
+$rubik: 'Rubik',
+sans-serif;
+
+$anton: 'Anton',
+sans-serif;
+
+
+.main {
+    background-image: url("./images/city-road-background-wallpaper-3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@mixin my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+body {
+    font-family: $nutino;
+}
+
+.refer-friend {
+    p {
+        float: right;
+        font-family: $nutino;
+        font-size: 13px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        padding-right: 20px;
+
+    }
+}
+
+.refer-friend {
+    background-color: lightgrey;
+    opacity: 0.7;
+}
+
+ul {
+    .navbar-right {
+        float: right;
+        font-size: 13px;
+    }
+}
+
+.navbar {
+    .navbar-brand {
+        img {
+            height: 40px;
+        }
+    }
+}
+
+.navbar-nav {
+    li {
+        padding: 0px 10px 0px 40px;
+    }
+}
+
+
+
+.no-border {
+    border: none;
+    background: none;
+    padding: 0px 20px 0px 20px;
+    color: #FFFFFA;
+}
+
+.buttons {
+    border: 3px solid yellow;
+
+    .vl {
+        border-left: 3px solid yellow;
+        height: 500px;
+        padding: 4px 0px 4px 0px;
+    }
+
+}
+
+.hero-img {
+    height: 300px;
+}
+
+.auto {
+    padding-top: 90px;
+    @include my-auto();
+}
+
+.search {
+    h2 {
+        font-family: $nutino !important;
+        margin-top: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: rgb(255, 255, 255);
+    }
+
+    background-color:rgba(19, 19, 18, 0.4);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 5px;
+
+    .search-btn {
+        background: none;
+        border: 3px solid yellow;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px 10px 20px;
+        margin: 20px;
+    }
+
+}
+
+
+[type="date"] {
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+    font-family: $nutino;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+/* custom styles */
+
+label {
+    display: inline-block;
+}
+
+input {
+    border: none;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+}
+
+.date {
+    padding: 30px 15px 15px 15px;
+    color: white;
+}
+
+form {
+    select {
+        background-color: white;
+        border: none;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+
+    }
+}
+
+.row {
+    .statement {
+        padding-top: 50px;
+        color: #fff;
+    }
+
+    .more {
+        border: none;
+        color: rgb(250, 208, 19);
+        align-self: center;
+        text-decoration: underline;
+        padding-bottom: 43px;
+    }
+
+}
+
+.counter {
+    background: rgb(197, 195, 195);
+    text-align: center;
+
+    .count-item {
+        border: 3px solid rgb(250, 250, 52);
+        margin: 50px 10px 50px 10px;
+        border-radius: 5px;
+        background: #fff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+
+        .count {
+            font-family: $anton;
+            padding-top: 15px;
+            font-size: 20px;
+        }
+
+        .count-desc {
+            font-weight: bold;
+            font-size: 12px;
+        }
+    }
+
+}
+
+.three {
+    background: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+.container {
+
+
+    .head {
+        padding: 50px 0px 50px 0px;
+        text-align: center;
+        font-family: $anton;
+    }
+
+    .mainbox {
+        margin: 20px 0px 20px;
+    }
+
+    .box {
+        background: #2C2D38;
+        color: whitesmoke;
+        height: 300px;
+        border-radius: 5px;
+
+        .content {
+            padding: 20px;
+
+            h4 {
+                font-weight: bold;
+                position: absolute;
+                top: 60px;
+                right: 10px;
+                font-size: 7em;
+                color: rgba(255, 255, 255, 0.5);
+                transition: 0.5s;
+                text-align: center;
+
+            }
+
+            h5 {
+                padding-top: 80px;
+                margin: 0px 0px 20px;
+
+                font: {
+                    size: 20px;
+                    weight: 800;
+                }
+            }
+
+            p {
+                font: {
+                    size: 12px;
+                    weight: 400;
+                }
+            }
+        }
+
+        &:hover {
+            .content {
+                h4 {
+                    top: -5px;
+                    right: 7px;
+                }
+            }
+
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+            0 6px 6px rgba(0, 0, 0, 0.23);
+
+        }
+
+
+    }
+
+
+
+}
+
+.four {
+    background: lightgray;
+
+
+    .container {
+        .row {
+            background: white;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                0 6px 6px rgba(0, 0, 0, 0.23);
+
+            .more1 {
+                background: white;
+
+                h6 {
+                    padding-top: 100px;
+                }
+            }
+
+            .col-md-3 {
+                border-bottom: 4px solid #2C2D38;
+            }
+
+            h6 {
+                font: {
+                    weight: 800;
+
+                }
+
+                padding-top:20px;
+            }
+
+            img {
+                height: 150px;
+
+            }
+        }
+    }
+}
+
+.five {
+    background: lightgray !important;
+    text-align: center;
+
+    img {
+        height: 200px;
+    }
+}
+
+footer {
+    background: #2C2D38;
+    padding: 60px;
+    text-align: center;
+    color: white;
+
+    p {
+        text-align: justify;
+        padding-left: 70px;
+    }
+
+
+    img {
+        height: 80px;
+    }
+
+    .copy {
+        text-align: center;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-toggle {
+        border: none;
+        outline: none;
+    }
+
+    .hero-img {
+        height: 200px;
+        margin-left: 44px;
+        margin-right: auto;
+    }
+
+    ul {
+        .navbar-right {
+            float: none;
+            font-size: 13px;
+        }
+    }
+
+    .main {
+        background-image: none;
+    }
+
+    .row {
+        .statement {
+            padding-top: 50px;
+            color: black;
+            text-align: justify;
+        }
+    }
+
+    .buttons {
+        width: 200px;
+    }
+
+    footer {
+        img {
+            margin-bottom: 30px;
+            height: 50px;
+        }
+
+        p {
+            margin-top: 20px;
+            padding: 0px;
+            text-align: center;
+        }
+
+    }
+}
